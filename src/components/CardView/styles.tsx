@@ -6,7 +6,7 @@ export const styles = StyleSheet.create({
     width: '100%',
     height: '100%',
     overflow: 'hidden',
-    borderRadius: 8
+    borderRadius: 8,
   },
   logoContainer: {
     alignItems: 'center',
@@ -39,4 +39,15 @@ export const styles = StyleSheet.create({
     fontWeight: 700,
     textAlign: 'center'
   },
+  priceLabelContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    alignItems: 'center',
+    marginTop: 10,
+    marginBottom: 10
+  },
+  priceLabel: {
+    color: '#FFF',
+    fontSize: 22
+  }
 });
