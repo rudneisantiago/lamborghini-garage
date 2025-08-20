@@ -1,9 +1,10 @@
 import { View, Text, Image } from 'react-native';
 
-import { styles } from './styles';
 import Logo from '../../../assets/logo.png'
-import { Divider } from '../Divider';
 import { CAR_ASSETS_BASE_URL } from '../../constants/car';
+import { Divider } from '../Divider';
+import { BuyButton } from '../BuyButton';
+import { styles } from './styles';
 
 export function CardView() {
   const renderLogoBox = () => (
@@ -32,6 +33,8 @@ export function CardView() {
       <Divider />
       {renderCarDetails()}
       {renderCarImage()}
+      <Divider />
+      <BuyButton title='Buy' onPress={() => console.log('apertou')} />
     </View>
   );
 }
